@@ -1,4 +1,4 @@
-<category id="catToolText">
+<category id="catToolText" index="1">
   <block type="variables_set">
     <field name="VAR">string</field>
     <value name="VALUE">
