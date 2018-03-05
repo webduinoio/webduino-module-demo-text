@@ -1,6 +1,10 @@
-Blockly.Msg.TEXT_SHOW = "to";
+Blockly.Msg.TEXT_SHOW = "to Display Text";
 Blockly.Msg.TEXT_SET = "Set";
+Blockly.Msg.TEXT_DISPLAY = "Display";
 Blockly.Msg.TEXT_SIZE = "Text Size to";
-Blockly.Msg.TEXT_LINEHEIGHT = "Line height to";
 Blockly.Msg.TEXT_COLOR = "Text Color to";
 Blockly.Msg.TEXT_BREAK = "Insert New Line";
+Blockly.Msg.TEXT_ALIGNMENT = "Text Alignment";
+Blockly.Msg.TEXT_ALIGN_LEFT = "left";
+Blockly.Msg.TEXT_ALIGN_CENTER = "center";
+Blockly.Msg.TEXT_ALIGN_RIGHT = "right";

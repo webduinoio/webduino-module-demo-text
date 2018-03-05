@@ -1,1 +1,1 @@
-MSG.catToolText = "显示文字";
+MSG.catDemoText = "显示文字";

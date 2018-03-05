@@ -1,6 +1,6 @@
 {
-  "types": ["text_show", "text_size", "text_lineheight", "text_color"],
-  "category": "catWeb",
+  "types": ["text_class", "text_set", "text_size", "text_color", "text_align"],
+  "category": "catDemoAll",
   "scripts": [
     "blockly/blocks.js",
     "blockly/javascript.js"

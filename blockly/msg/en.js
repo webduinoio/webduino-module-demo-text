@@ -1,1 +1,1 @@
-MSG.catToolText = "Display String";
+MSG.catDemoText = "Display Text";

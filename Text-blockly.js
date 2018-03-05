@@ -2,42 +2,45 @@
 
   'use strict';
 
-  var blocklyText = function (text) {
-    if ($('.text-wrapper').length < 1) {
-      this.wrapper = $('<div/>').addClass('text-wrapper')
-      $('body').append(this.wrapper);
+  var demoText = function (id) {
+    if (!id) {
+      throw new Error('Missing parameter.');
     }
-    this.paragraph = $('<p/>').appendTo('.text-wrapper');
-    if (text) {
-      this.paragraph.text(text);
+    if (typeof id !== 'string') {
+      throw new Error('Invalid type of parameter.');
+    }
+
+    this.blockId = '#' + id;
+    this.paragraph = null;
+
+    if ($(this.blockId).length < 1) {
+      this.demoWrapper = $('<div/>').addClass('demo').attr('id', id);
+      $('#demo-container').append(this.demoWrapper);
+      this.paragraph = $('<p/>').appendTo(this.blockId);
     }
   }
 
-  blocklyText.prototype.setText = function (text) {
+  demoText.prototype.setText = function (text) {
     this.paragraph.text(text);
     return this;
   };
 
-  blocklyText.prototype.setColor = function (hex) {
+  demoText.prototype.setColor = function (hex) {
     this.paragraph.css('color', hex);
     return this;
   };
 
-  blocklyText.prototype.setSize = function (size) {
-    this.paragraph.css('font-size', size + 'px');
+  demoText.prototype.setSize = function (size) {
+    size = !size ? '' : size += 'px';
+    this.paragraph.css('font-size', size);
     return this;
   };
 
-  blocklyText.prototype.setLineHeight = function (height) {
-    this.paragraph.css('line-height', height + 'px');
+  demoText.prototype.setAlignment = function (alignment) {
+    this.paragraph.css('text-align', alignment);
     return this;
   };
 
-  blocklyText.prototype.addLineBreak = function () {
-    this.wrapper.append('</br>');
-    return this;
-  };
-
-  window.blocklyText = blocklyText;
+  window.demoText = demoText;
 
 }(window, window.jQuery));

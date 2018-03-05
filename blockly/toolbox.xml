@@ -1,25 +1,19 @@
-<category id="catToolText" index="1">
+<category id="catDemoText" index="1">
   <block type="variables_set">
     <field name="VAR">string</field>
     <value name="VALUE">
-      <block type="text_show">
-        <value name="string_">
-          <block type="text">
-            <field name="TEXT">Webduino</field>
-          </block>
-        </value>
+      <block type="text_class"></block>
+    </value>
+  </block>
+  <block type="text_set">
+    <value name="string_">
+      <block type="text">
+        <field name="TEXT">Webduino</field>
       </block>
     </value>
   </block>
   <block type="text_size">
     <value name="size_">
-      <block type="math_number">
-        <field name="NUM">20</field>
-      </block>
-    </value>
-  </block>
-  <block type="text_lineheight">
-    <value name="lineheight_">
       <block type="math_number">
         <field name="NUM">20</field>
       </block>
@@ -32,5 +26,5 @@
       </block>
     </value>
   </block>
-  <block type="text_break"></block>
+  <block type="text_align"></block>
 </category>
