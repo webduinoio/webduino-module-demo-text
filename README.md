@@ -2,7 +2,7 @@
 
 Webduino Module for Text Displaying.
 
-The module that can display text on panel.
+The module that can display text on demo panel.
 
 ## Installation
 
