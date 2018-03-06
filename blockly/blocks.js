@@ -7,8 +7,8 @@ Blockly.Blocks['text_class'] = {
         .appendField(Blockly.Msg.TEXT_SHOW);
     this.setOutput(true, null);
     this.setColour(Blockly.Blocks.colour.HUE);
-    this.setTooltip("");
-    this.setHelpUrl("");
+    this.setTooltip('');
+    this.setHelpUrl('');
   }
 };
 
