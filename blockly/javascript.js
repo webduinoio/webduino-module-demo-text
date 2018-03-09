@@ -3,7 +3,7 @@ Blockly.JavaScript['text_class'] = function (block) {
   return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
-Blockly.JavaScript['text_set'] = function(block) {
+Blockly.JavaScript['text_set'] = function (block) {
   var stringvariable_ = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('stringVariable_'), Blockly.Variables.NAME_TYPE);
   var value_name = Blockly.JavaScript.valueToCode(block, 'string_', Blockly.JavaScript.ORDER_ATOMIC);
   var code = stringvariable_ + '.setText(' + value_name + ');\n';

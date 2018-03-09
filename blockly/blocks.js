@@ -2,7 +2,7 @@ var mainUrl = 'https://tutorials.webduino.io/zh-tw/docs/';
 var utmUrl = '?utm_source=cloud-blockly&utm_medium=contextMenu&utm_campaign=tutorials';
 
 Blockly.Blocks['text_class'] = {
-  init: function() {
+  init: function () {
     this.appendDummyInput()
         .appendField(Blockly.Msg.TEXT_SHOW);
     this.setOutput(true, null);
@@ -13,7 +13,7 @@ Blockly.Blocks['text_class'] = {
 };
 
 Blockly.Blocks['text_set'] = {
-  init: function() {
+  init: function () {
     this.appendValueInput('string_')
         .setCheck(['Boolean', 'String', 'Number'])
         .appendField(Blockly.Msg.TEXT_SET)
@@ -56,7 +56,7 @@ Blockly.Blocks['text_color'] = {
 };
 
 Blockly.Blocks['text_align'] = {
-  init: function() {
+  init: function () {
     this.appendDummyInput()
         .appendField(Blockly.Msg.TEXT_SET)
         .appendField(new Blockly.FieldVariable('string'), 'stringVariable_')

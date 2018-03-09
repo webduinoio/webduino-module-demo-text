@@ -18,10 +18,15 @@
       $('#demo-container').append(this.demoWrapper);
       this.paragraph = $('<p/>').appendTo(this.blockId);
     }
-  }
+  };
 
   demoText.prototype.setText = function (text) {
     this.paragraph.text(text);
+    return this;
+  };
+
+  demoText.prototype.appendText = function (text) {
+    this.paragraph.append(text);
     return this;
   };
 
