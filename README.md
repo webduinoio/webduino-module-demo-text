@@ -1,4 +1,4 @@
-# webduino-module-text
+# webduino-module-demo-text
 
 Webduino Module for Text Displaying.
 
@@ -7,7 +7,7 @@ The module that can display text on demo panel.
 ## Installation
 
 ```shell
-bower install https://github.com/webduinoio/webduino-module-text.git
+bower install https://github.com/webduinoio/webduino-module-demo-text.git
 ```
 
 ## License
